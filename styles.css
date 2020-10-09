@@ -70,6 +70,7 @@ body {
 #container_home {
     width: 100vw;
     height: 100vh;
+    min-height: 600px;
     display: flex;
     flex-direction: column;
     background-color: pink;
@@ -116,7 +117,8 @@ button:hover {
 #container_what {
     width: 100vw;
     height: 80vh;
-    min-height: 600px;
+    min-height: 500px;
+    max-height: 700px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -237,7 +239,6 @@ button:hover {
 #whatSubtitle {
     font-size: 20px;
     font-weight: 500;
-    /* line-height: 25px; */
     margin-bottom: 0px;
 }
 
@@ -248,7 +249,8 @@ button:hover {
 #container_why {
     width: 100vw;
     height: 100vh;
-    padding: 50px 0px;
+    min-height: 800px;
+    max-height: 900px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -293,8 +295,9 @@ button:hover {
     margin-left: 150px;
     margin-bottom: -60px;
     background-color: rgb(253, 253, 253, 0.8);
+    border-radius: 10px;
     font-size: 15px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat';
 }
 
 #whyChartInfo {
@@ -347,13 +350,14 @@ button:hover {
 
 #whoTitle {
     font-size: 36px;
+    /* margin-bottom: 50px; */
 }
 
 #whoList {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .teamMember {
@@ -364,13 +368,38 @@ button:hover {
     margin: 0px 80px;
 }
 
-.memberName {
+/* .memberName {
 
+} */
+
+.memberTitle {
+   align-self: flex-start;
+   text-transform: uppercase;
+   font-size: 14px;
+   font-weight: 500;
 }
 
+/* .overlay {
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    background-color:  #300b69;
+    opacity: 0.5;
+    z-index: 2;
+    position: absolute;
+} */
 .memberPhoto {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
+    /* z-index: 1; */
+}
+
+
+
+footer {
+    width: 100vw;
+    height: 100px;
+    background-color: var(--dark-blue);
 }

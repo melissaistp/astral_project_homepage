@@ -3,7 +3,7 @@
 <html>
   <head>
     <title>AstralProject</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind+Guntur:300,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind+Guntur:300,400,500,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -20,7 +20,7 @@
         </div>
     
         <div id = "container_home">
-            <div id="intro" data-aos="fade-right" data-aos-duration="800">
+            <div id="intro" data-aos="fade-right" data-aos-duration="1000">
                 <h1 id="tagline">Dream on.</h1>
                 <h2 id="subtagline">Profit-driven social and spiritual networking for the dreamscape</h2>
                 <button>TRY NOW</button>
@@ -80,8 +80,7 @@
                 data-aos-anchor="#whyText"
                 data-aos-offset="0"
                 data-aos-delay="1000"
-                data-aos-duration="2000">Don't think too hard about this one.<br/>Wealth, social sleeping, and successful relationships
-                    <br/>are definitely highly correlated.</p>
+                data-aos-duration="2000">Don't think too hard about this one.</p>
                 <div id="whyChartInfo">
                 <div id="whyChart"></div>
                 <div id="gradientBar"></div>
@@ -94,33 +93,42 @@
         </div>
         
         <div id = "container_who">
-            <h3 id="whoTitle">Meet the Team.</h3>
+            <h3 id="whoTitle">Meet the Team. (Under construction)</h3>
             <div id="whoList">
                 <div class="teamMember">
-                    <img class="memberPhoto" src="images/Hypnos.png">
+                    <img class="memberPhoto" src="images/Hypnos.png"><div class="overlay"></div>
                     <h3 class="memberName">Hypnos</h3>
+                    <h4 class="memberTitle">Head of Operations</h4>
                     <p class="memberText">
-                        CEO<br/>
-                        Over 5,000 years experience in sleep induction and analysis<br/>
-                        Known to his friends as the God of Sleep, so you'll catch him catching some Z's just about anywhere!
+                        Over 5,000 years in sleep induction and analysis<br/>
+                        MBA, Oneiroi University</br>
+                        Known to his friends as the God of Sleep, so you'll catch him catching some Z's just about anywhere
                     </p>
                 </div>
                 <div class="teamMember">
-                    <img class="memberPhoto" src="images/badiane.jpg">
+                    <div class="overlay"></div><img class="memberPhoto" src="images/badiane.jpg">
                     <h3 class="memberName">Queen Badiane</h3>
+                    <h4 class="memberTitle">Brand Strategist and Artistic Director</h4>
                     <p class="memberText">
-                        Brand Strategist and Artistic Director<br/>
+                        Founder of Black Dream Hole, now a VR game dev company, in 1995<br/>
+                        Participated in the Marzipan Initiative, an all-girls anti-empowerment project<br/>
+                        Makes a mean star anise burger. Don't knock it till you try it!
                     </p>
                 </div>
                 <div class="teamMember">
-                    <img class="memberPhoto" src="images/shrek.jpg">
+                    <div class="overlay"></div><img class="memberPhoto" src="images/shrek.jpg">
                     <h3 class="memberName">Shrek</h3>
+                    <h4 class="memberTitle">Senior Technical Engineer</h4>
                     <p class="memberText">
-                        Senior Technical Engineer<br/>
+                        He is a sheep
                     </p>
                 </div>
             </div>
         </div>
+
+        <footer>
+            
+        </footer>
     </div>    
 </body>
 
@@ -129,5 +137,5 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
-  </script>
+</script>
 </html>
