@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>AstralProject</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind+Guntur:300,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+ <body>
+    <div id = "container_all">
+        <div id="nav">
+            <a href="/" class="tab" id="logo">THE ASTRAL PROJECT</a>
+            <a href="#container_what" class="tab">WHAT WE DO</a>
+            <a href="#container_why" class="tab">WHY US</a>
+            <a href="#container_who" class="tab">WHO WE ARE</a>
+            <button class="tab" id="topTryButton">TRY NOW</button>
+        </div>
+    
+        <div id = "container_home">
+            <div id="intro" data-aos="fade-right" data-aos-duration="800">
+                <h1 id="tagline">Dream on.</h1>
+                <h2 id="subtagline">Profit-driven social and spiritual networking for the dreamscape</h2>
+                <button>TRY NOW</button>
+            </div>
+        </div>
+    
+        <div id = "container_what">
+    
+            <div id="whatImages">
+                <div id="childDepiction"  data-aos="fade-right" data-aos-duration="1000">
+                    <div id="childDepictionImage"></div>
+                    <p class="imgCaption">"A social situation as depicted by a young child."</p>
+                    <p class="imgCaptionSource">David Katz, "Psychological Atlas with 600 illustrations," 1968</p>
+                </div>
+                <div id="togetherDepiction" data-aos="fade-right" data-aos-duration="1000">
+                    <div id="togetherDepictionImage"></div>
+                    <p class="imgCaption">Illustration for MailChimp by Charlotte Ager</p>
+                </div>
+                <div id="selfOtherDepiction" data-aos="fade-right" data-aos-duration="1000">
+                    <div id="selfOtherDepictionImage"></div>
+                    <p class="imgCaption"><span class="blackCaption">Recognition of the self through the other</span></p>
+                    <p class="imgCaptionSource"><span class="blackCaption">Source unknown</span></p>
+                </div>
+                <div class="backgroundSquare" id="backgroundSquare1"  data-aos="fade-right" data-aos-duration="800"></div>
+                <div class="backgroundSquare" id="backgroundSquare2"  data-aos="fade-right" data-aos-duration="500"></div>
+            </div>
+    
+            <div id="whatText"  data-aos="fade-left" data-aos-duration="800">
+                <h3 id="whatTitle">NO-CODE<br/>ASTRAL PROJECTION.</h3>
+                <h4 id="whatSubtitle">In a time of social distancing, appearing to your friends in their dreams has never been
+                    so <span id="blueWord">easy.</span></h4>
+                <p id="whatSmallText">
+                    Our drag-and-drop-your-soul solution removes all the typical divination bugs out of the projection process. We even use
+                    a cloud-based approach to bring multiple souls to one of our astral planes. That means no need
+                    for local dream hosting and no more making up excuses when your consciousness won't let your friend in because of
+                    unresolved negative emotions towards them.
+                </p>
+            </div>
+        </div>
+    
+        <div id = "container_why">
+            <div id="whyText" data-aos="fade-right" data-aos-duration="800">
+                <h3 id="whyTitle">Make the most of life,<br/>awake or asleep.</h3>
+                <h4 id="whySubtitle">Introducing our automation to those unproductive sleeping hours allows you to spend all your
+                    waking hours doing what you love: work!</h4>
+                <p id="whySmallText">Whether you're
+                    a company looking for a way to guarantee your employees' satisfaction while maximizing their productivity or
+                    your average Elon-Musk-esque lover of tech, you could say our vibes are on the same frequency. Our patented
+                    aurasphere allows you to have a chat with
+                    friends in disjointed reality, smoothing over the slog of small talk. All the while, our smart technology projects
+                    perfectly imitated
+                    attentiveness and empathy to those around you. Talk about time flying when you're having fun. </p>
+            </div>
+            
+            <div id="whyRight" data-aos="fade-left" data-aos-duration="800">
+                <p id="dontThink" data-aos="fade-left"
+                data-aos-anchor="#whyText"
+                data-aos-offset="0"
+                data-aos-delay="1000"
+                data-aos-duration="2000">Don't think too hard about this one.<br/>Wealth, social sleeping, and successful relationships
+                    <br/>are definitely highly correlated.</p>
+                <div id="whyChartInfo">
+                <div id="whyChart"></div>
+                <div id="gradientBar"></div>
+                <div id="gradientBarLegend">
+                    <p id="topLegend">Always sleep apart</p>
+                    <p>Never sleep apart</p>
+                </div>
+            </div>
+            </div> 
+        </div>
+        
+        <div id = "container_who">
+            <h3 id="whoTitle">Meet the Team.</h3>
+            <div id="whoList">
+                <div class="teamMember">
+                    <img class="memberPhoto" src="images/Hypnos.png">
+                    <h3 class="memberName">Hypnos</h3>
+                    <p class="memberText">
+                        CEO<br/>
+                        Over 5,000 years experience in sleep induction and analysis<br/>
+                        Known to his friends as the God of Sleep, so you'll catch him catching some Z's just about anywhere!
+                    </p>
+                </div>
+                <div class="teamMember">
+                    <img class="memberPhoto" src="images/badiane.jpg">
+                    <h3 class="memberName">Queen Badiane</h3>
+                    <p class="memberText">
+                        Brand Strategist and Artistic Director<br/>
+                    </p>
+                </div>
+                <div class="teamMember">
+                    <img class="memberPhoto" src="images/shrek.jpg">
+                    <h3 class="memberName">Shrek</h3>
+                    <p class="memberText">
+                        Senior Technical Engineer<br/>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="scripts.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</html>

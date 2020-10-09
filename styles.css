@@ -1,0 +1,376 @@
+@import "bootstrap/scss/bootstrap.scss";
+
+:root {
+    --off-white: #f2f2f2;   
+    --dark-blue: #050c25;
+}
+
+body {
+    font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+}
+
+#container_all {
+    position:absolute;
+    top: 0;
+    left:0;
+    right:0;
+    width: 100vw;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--off-white);
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    overflow: hidden;
+    background-color: rgba(100, 100, 100, 0);
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    padding-top: 10px;
+    margin-right: 20px;
+    transition: background-color 200ms linear;
+    z-index: 99;
+}
+
+.tab {
+    color: var(--off-white);
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+}
+
+#nav a:hover:not(#logo) {
+    background: var(--off-white);
+    color: black;
+}
+
+#logo {
+    text-align: right;
+    margin-right: auto;
+}
+
+#topTryButton { 
+    margin-left: 20px;
+    margin-right:50px;
+    width: 125px;
+    height: 50px;
+    font-size: 13px;
+    padding: 0px;
+}
+
+.scrolled {
+    background-color: var(--dark-blue) !important;
+}
+
+#container_home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    background-image: url("images/space.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#intro {
+    font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+    padding-left: 10vw;
+    padding-top: 30vh;
+    color: white;
+}
+
+#tagline {
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#subtagline {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+button {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: rgba(100, 100, 100, 0);
+    border: 0.01em solid rgba(180, 180, 180, 0.8);
+    padding: 10px 20px 8px 20px;
+}
+
+button:hover {
+    color: black !important;
+    background-color: var(--off-white);
+    border: 0.01em solid white;
+}
+
+#container_what {
+    width: 100vw;
+    height: 80vh;
+    min-height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--off-white);
+    padding: 100px 0px;
+}
+
+#whatImages {
+    width: 65vw;
+    position: relative;
+    padding-bottom: 100px
+}
+
+.imgCaption {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 1px;
+    color: white;
+}
+
+.imgCaptionSource {
+    font-size: 10px;
+    color: var(--off-white);
+}
+
+#childDepiction {
+    position: absolute;
+    z-index: 13;
+    margin-top: -50px;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+#childDepictionImage {
+    align-self: center;
+    width: 178px;
+    height: 204px;
+    background-image: url('images/childdepiction.png');
+    background-size: cover;
+}
+
+#togetherDepiction {
+    position: absolute;
+    z-index: 12;
+    margin-left: 395px;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+#togetherDepictionImage {
+    width: 240px;
+    height: 163px;
+    background-image: url('images/togetherhead.png');
+    background-size: cover;
+    margin-left: 130px;
+}
+
+#selfOtherDepiction {
+    position: absolute;
+    z-index: 11;
+    margin-top: 300px;
+    margin-left: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#selfOtherDepictionImage {
+    width: 510px;
+    height: 200px;
+    background-image: url('images/selfthroughother.png');
+    background-size: cover;
+}
+
+.blackCaption {
+    color: black;
+}
+
+.backgroundSquare {
+    width: 600px;
+    height: 350px;
+}
+
+#backgroundSquare1 {
+    position: relative;
+    margin-left: 100px;
+    background-color: var(--dark-blue);
+    z-index: 10;
+}
+
+#backgroundSquare2 {
+    position: relative;
+    margin-top: -275px;
+    margin-left: 190px;
+    background-image: url('images/nebula.jpg');
+    background-size: 1000px 700px;
+    z-index: 9;
+}
+
+#whatText {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    padding-right: 5vw;
+}
+
+#whatTitle {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #0e1838;
+    margin-bottom: 30px;
+}
+
+#whatSubtitle {
+    font-size: 20px;
+    font-weight: 500;
+    /* line-height: 25px; */
+    margin-bottom: 0px;
+}
+
+#whatSmallText {
+    font-size: 15px;
+}
+
+#container_why {
+    width: 100vw;
+    height: 100vh;
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-blue);
+}
+
+#whyText {
+    width: 40vw;
+    margin-top: 100px;
+    padding-left: 100px;
+    padding-right: 50px;
+    color:white;
+    padding-bottom: 100px;
+}
+
+#whyTitle {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 40px;
+    color: white;
+    margin-bottom: 70px;
+}
+
+#whySubtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 20px;
+    color: var(--off-white);
+}
+
+#whySmallText {
+    font-size: 15px;
+    color: var(--off-white);
+}
+
+#dontThink {
+    color: var(--dark-blue);
+    padding: 30px 100px 30px 30px;
+    width: 600px;
+    margin-left: 150px;
+    margin-bottom: -60px;
+    background-color: rgb(253, 253, 253, 0.8);
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#whyChartInfo {
+    display: flex;
+    flex-direction: row;;
+    margin-top: 100px;
+    padding-right: 0px;
+}
+
+#whyChart {
+    height: 520px;
+    width: 520px;
+}
+
+#gradientBar {
+    margin-left: 50px;
+    width: 30px;
+    height:500px;
+    background-image: linear-gradient(to bottom,  #5800dd,#9b00f0, #fff);
+}
+
+#gradientBarLegend {
+    color: var(--off-white);
+    font-size: 12px;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+#topLegend {
+    margin-bottom: 475px;
+}
+
+.axisWhite text{
+    font-family: "Montserrat";
+    fill: #9b00f0;
+    font-size: 15px;
+}  
+
+#container_who {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--off-white);
+}
+
+#whoTitle {
+    font-size: 36px;
+}
+
+#whoList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamMember {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 0px 80px;
+}
+
+.memberName {
+
+}
+
+.memberPhoto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
