@@ -1,3 +1,4 @@
+//Event listener that detects scrolling in order to change the fixed navbar's bg color
 window.addEventListener('scroll', function(e) {
     
     let navbar = document.getElementById("nav");
@@ -10,50 +11,55 @@ window.addEventListener('scroll', function(e) {
   }
   });
 
+
+//Random number picker up to 100th decimal point between in a range
 let precision=100;
 function randomnum(max, min) {
   return Math.floor(Math.random() * (max*precision - min*precision) + min*precision)/precision;
 }
-  
-  function convertFrequency(frequency) { //color
-    switch(frequency) {
-      case("Never"):
-        return 0;
-      case ("Once a year or less") :
-        return randomnum(1,0);
-      case("Once a month or less"):
-        return randomnum(12,1);
-      case ("A few times per month") :
-        return randomnum(30,12);
-      case("A few times per week"):
-        return randomnum(300,30);
-      case("Every night"):
-        return randomnum(365,300);
-    }
-  }
-  
-  function convertLength(length) { //x-axis
-    if (length==="Less than 1 year"){
+
+//Converty frequency of sleeping together to a color
+function convertFrequency(frequency) { 
+  switch(frequency) {
+    case("Never"):
+      return 0;
+    case ("Once a year or less") :
       return randomnum(1,0);
-    }
-    if (length==="1-5 years"){
-      return randomnum(5,1);
-    }
-    if (length==="6-10 years"){
-      return randomnum(10,6);
-    }
-    if (length ==="11-15 years"){
-      return randomnum(15,11);
-    }
-    if (length==="16-20 years"){
-      return randomnum(20,16);
-    }
-    if (length==="More than 20 years"){
-      return randomnum(22,20);
-    }
+    case("Once a month or less"):
+      return randomnum(12,1);
+    case ("A few times per month") :
+      return randomnum(30,12);
+    case("A few times per week"):
+      return randomnum(300,30);
+    case("Every night"):
+      return randomnum(365,300);
   }
-  
-function convertIncome(income) { //y-axis
+}
+
+//Convert the length of relationship to a number used for x-axis
+function convertLength(length) { 
+  if (length==="Less than 1 year"){
+    return randomnum(1,0);
+  }
+  if (length==="1-5 years"){
+    return randomnum(5,1);
+  }
+  if (length==="6-10 years"){
+    return randomnum(10,6);
+  }
+  if (length ==="11-15 years"){
+    return randomnum(15,11);
+  }
+  if (length==="16-20 years"){
+    return randomnum(20,16);
+  }
+  if (length==="More than 20 years"){
+    return randomnum(22,20);
+  }
+}
+
+//Convert the household income of each couple to a number used for the y-axis
+function convertIncome(income) { 
     if (income==="$0 - $24,999"){
       return randomnum(25,0);
     }
@@ -74,7 +80,7 @@ function convertIncome(income) { //y-axis
   
 
 function whyChart() {
-    // set the dimensions and margins of the graph
+  // set the dimensions and margins of the graph
   let margin = {top: 10, right: 50, bottom: 70, left: 80},
   width = 520 - margin.left - margin.right,
   height = 520 - margin.top - margin.bottom;

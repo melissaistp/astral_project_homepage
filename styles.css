@@ -21,6 +21,7 @@ body {
     background-color: var(--off-white);
 }
 
+/* Navbar at the top of the page */
 #nav {
     display: flex;
     flex-direction: row;
@@ -63,6 +64,7 @@ body {
     background-color: var(--dark-blue) !important;
 }
 
+/* First section of page with project tagline */
 #container_home {
     width: 100vw;
     height: 100vh;
@@ -110,6 +112,7 @@ body {
     border: 0.01em solid white;
 }
 
+/* Second section of the page explaining what the product is */
 #container_what {
     width: 100vw;
     height: 80vh;
@@ -242,6 +245,7 @@ body {
     font-size: 15px;
 }
 
+/* Third section of the page explain why the product is worthwhile */
 #container_why {
     width: 100vw;
     height: 100vh;
@@ -334,6 +338,7 @@ body {
     font-size: 15px;
 }  
 
+/* Last section with the startup founders */
 #container_who {
     width: 100vw;
     height: 100vh;
@@ -346,7 +351,6 @@ body {
 
 #whoTitle {
     font-size: 36px;
-    /* margin-bottom: 50px; */
 }
 
 #whoList {
@@ -364,10 +368,6 @@ body {
     margin: 0px 80px;
 }
 
-/* .memberName {
-
-} */
-
 .memberTitle {
    align-self: flex-start;
    text-transform: uppercase;
@@ -375,25 +375,14 @@ body {
    font-weight: 500;
 }
 
-/* .overlay {
-    width:200px;
-    height:200px;
-    border-radius: 50%;
-    background-color:  #300b69;
-    opacity: 0.5;
-    z-index: 2;
-    position: absolute;
-} */
 .memberPhoto {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    /* z-index: 1; */
 }
 
-
-
+/* Footer at the bottom of the page */
 footer {
     width: 100vw;
     height: 100px;
